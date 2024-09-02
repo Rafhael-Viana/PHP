@@ -1,0 +1,20 @@
+{
+    "name": "ademar/intercrud",
+    "description": "Crud for interview in PHP",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ademar\\Intercrud\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ademar Rafhael",
+            "email": "vnarafha@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "5.3.3"
+    }
+}
