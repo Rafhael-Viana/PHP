@@ -11,9 +11,7 @@
 
     <div class="">
 
-      <h1 class="p-3">Cadastro</h1>
-
-      <form class = "p-4 ">
+      <form method="POST" action="connection.php" class = "p-4 ">
         <div class="mb-4">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -32,7 +30,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <?php include "../vendor/autoload.php"; ?>
 
   </body>
 </html>
