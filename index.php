@@ -42,22 +42,31 @@
         <div class="col mt-5">
           
           <?php 
-              include("connection.php");
+              include("src/connection.php");
+
               switch (@$_REQUEST["page"]) {
               case 'registro':
-                include("cadastro.php");
+                include("src/register.php");
                 break;
               
               case 'listar':
-                include("users.php");
+                include("src/users.php");
+                break;
+
+              case 'save':
+                include("src/save.php");
+                break;
+
+              case 'edit':
+                include("src/edit.php");
                 break;
 
               default:
                 print "Bem Vindos";
                 break;
             }
+            #include("teste.php")
           ?>
-
         </div>
       </div>
     </div>
