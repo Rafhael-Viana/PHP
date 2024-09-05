@@ -1,8 +1,5 @@
 <?php
 
-// foreach($_REQUEST as $i){
-//   echo "$i<br>";
-// }
 
 switch ($_REQUEST["acao"]) {
 
@@ -59,7 +56,25 @@ switch ($_REQUEST["acao"]) {
     break;
 
   case 'delete':
-    # code...
+    
+    $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"];
+    $res = $conn -> query($sql);
+
+    if($res == true){
+      print "
+      <script>
+        alert('Excluído com sucesso.')
+        location.href='?page=listar';
+      </script>
+      ";
+    } else {
+      print "
+      <script>
+        alert('Não foi possível excluir o seu cadastro.')
+        location.href='?page=listar';
+      </script>
+      ";
+    }
     break;
 
   default:

@@ -27,7 +27,7 @@
                 <a class="nav-link" href="?page=listar">Usuários</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                <a class="nav-link active" aria-current="page" href="?page=sobre">Sobre</a>
               </li>
             </ul>
           </div>
@@ -60,6 +60,11 @@
               case 'edit':
                 include("src/edit.php");
                 break;
+
+              case 'sobre':
+                include ("src/sobre.php");
+                break;
+
 
               default:
                 print "Bem Vindos";
